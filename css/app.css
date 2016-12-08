@@ -109,10 +109,10 @@
 /*HERO///////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////*/
 .hero{
-  background-image: url("https://i.ytimg.com/vi/1dWjKkF0Zi4/maxresdefault.jpg");
+  background-image: url("https://img.businessoffashion.com/1024/573/magic/site/uploads/2015/04/shutterstock_212559235.jpg");
   background-color: #999;
   padding: 80px 0px;
-  min-height: 400px;
+  min-height: 550px;
   color: white;
   background-attachment: fixed;
   background-size: cover;
@@ -207,7 +207,6 @@ $red: #e74c3c;
 html, body {
   background: #f1f1f1;
   font-family: 'Merriweather', sans-serif;
-  padding: 1em;
 }
 
 h1 {
