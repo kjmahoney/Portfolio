@@ -1,0 +1,306 @@
+/*GENERAL///////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////*/
+*{
+  outline:none;
+}
+
+/*you want multiple wrappers around each section, not the whole thing*/
+.wrap{
+  width: 90%;
+  margin: 0px auto;
+  max-width: 1100px;
+}
+
+.off-canvas-wrapper{
+  background-color: #222;
+}
+
+.section-title{
+  text-align: center;
+}
+
+.section-title p{
+  text-align: center;
+  display: inline-block;
+}
+
+.main{
+  padding: 80px 0px;
+  color: black;
+  background-attachment: fixed;
+}
+
+.center{
+  text-align: center;
+}
+
+/*NAV MOBILE///////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////*/
+.title-bar{
+  background-color: #222;
+  height: 60px;
+  padding: 17px;
+}
+
+#mobile-menu{
+  background-color: #222;
+  padding: 10px;
+}
+/*dont need to have ul*/
+#mobile-menu li{
+  list-style: none;
+}
+
+#mobile-menu a{
+  color:rgba(255,255,255,.5);
+  font-weight: bold;
+  line-height: 2;
+}
+
+#mobile-menu a:hover{
+  color:rgba(255,255,255,.3);
+  font-weight: bold;
+  line-height: 2;
+}
+
+.js-off-canvas-exit{
+  /*0 0 0 makes things darker*/
+  background-color:rgba(0,0,0,.5);
+}
+
+/*NAV DESKTOP///////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////*/
+.nav-desktop{
+  background-color: #222;
+  height: 80px;
+  /*once line height adjusted, check if padding is preventing cetnering*/
+  padding: 0px;
+}
+
+.nav-desktop .menu-desktop{
+  line-height: 80px;
+  background-color: transparent;
+}
+
+.nav-desktop a{
+  line-height: 80px;
+}
+
+.menu>li>a{
+  display: inline-block;
+  /*so that link applies to whole nav height*/
+  line-height: 80px;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: white;
+}
+
+.menu>li>a:hover{
+  /*allows your background to respond to its parent*/
+  background-color:rgba(255,255,255,.1)
+}
+
+.site-logo{
+  color:white;
+  /*make the height of inline as high as bar to center*/
+  line-height: 80px;
+}
+
+/*HERO///////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////*/
+.hero{
+  background-image: url("https://i.ytimg.com/vi/1dWjKkF0Zi4/maxresdefault.jpg");
+  background-color: #999;
+  padding: 80px 0px;
+  min-height: 400px;
+  color: white;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.hero h1,
+      p{
+        /*nice touch for text color*/
+  color:rgba(255,255,255,.8);
+  max-width: 70%;
+}
+
+.button.success {
+  background-color: purple;
+}
+
+
+/*ABOUT ME///////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////*/
+
+.about-me{
+  background-image: url("../img/ignasi_pattern_s.png");
+}
+
+.main h2{
+  text-align: center;
+}
+
+.main p{
+  color: black;
+}
+
+/*PORTFOLIO///////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////*/
+
+.portfolio{
+  background-image: url("../img/weather.png");
+}
+
+.portfolio-pic{
+  width: 300px;
+}
+
+/*FOOTER///////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////*/
+footer{
+  background-color: #222;
+  padding: 80px 0px;
+  text-align: center;
+}
+
+
+
+footer h4{
+  color:rgba(255,255,255,.8);
+  font-size: 1.3em;
+}
+
+/*note how to change color of an hr, it is just a border bottom*/
+/*if you try to style whole border it will increase size of border*/
+footer hr{
+  border-color: rgba(255,255,255,.1);
+  margin: 10px 0px;
+  font-size:.8em;
+}
+
+footer a{
+  display: block;
+  color: red;
+}
+
+footer a span:hover{
+  color:rgba(255,255,255,.8);
+}
+
+footer a span{
+  color:rgba(255,255,255,.3);
+}
+
+/*Email form*/
+@import "compass/css3";
+
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+$red: #e74c3c;
+
+*,
+*:before,
+*:after {
+   @include box-sizing(border-box);
+}
+
+html, body {
+  background: #f1f1f1;
+  font-family: 'Merriweather', sans-serif;
+  padding: 1em;
+}
+
+h1 {
+   text-align: center;
+   color: #a8a8a8;
+   @include text-shadow(1px 1px 0 rgba(white, 1));
+}
+
+form {
+   max-width: 600px;
+   text-align: center;
+   margin: 20px auto;
+
+  input, textarea {
+     border:0; outline:0;
+     padding: 1em;
+     @include border-radius(8px);
+     display: block;
+     width: 100%;
+     margin-top: 1em;
+     font-family: 'Merriweather', sans-serif;
+     @include box-shadow(0 1px 1px rgba(black, 0.1));
+     resize: none;
+
+    &:focus {
+       @include box-shadow(0 0px 2px rgba($red, 1)!important);
+    }
+  }
+
+  #input-submit {
+     color: white;
+     background: $red;
+     cursor: pointer;
+
+    &:hover {
+       @include box-shadow(0 1px 1px 1px rgba(#aaa, 0.6));
+    }
+  }
+
+  textarea {
+      height: 126px;
+  }
+}
+
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right { width: 50%; }
+
+.left {
+     margin-right: 2%;
+}
+
+
+@media (max-width: 480px) {
+  .half {
+     width: 100%;
+     float: none;
+     margin-bottom: 0;
+  }
+}
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+/*end email form*/
+
+/*MEDIA QUERY*/
+@media (max-width: 639px) {
+  /*things warp at 640 so make disappear at 639*/
+.nav-desktop{
+      display:none;
+}
+
+}
+
+@media (max-width: 875px) {
+  /*things warp at 640 so make disappear at 639*/
+  .hero h1,
+        p{
+          /*nice touch for text color*/
+    max-width: 100%;
+  }
+
+}
