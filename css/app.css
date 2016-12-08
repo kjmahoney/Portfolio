@@ -109,7 +109,6 @@
 /*HERO///////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////*/
 .hero{
-  background-image: url("https://img.businessoffashion.com/1024/573/magic/site/uploads/2015/04/shutterstock_212559235.jpg");
   background-color: #999;
   padding: 80px 0px;
   min-height: 550px;
@@ -125,9 +124,33 @@
   max-width: 70%;
 }
 
-.button.success {
-  background-color: purple;
+.slide-one{
+  background-image: url("https://img.businessoffashion.com/1024/573/magic/site/uploads/2015/04/shutterstock_212559235.jpg");
 }
+
+.slide-two{
+  background-image: url("http://www.parisaddress.com/var/source/district/new/tour_eiffel-paris.jpg");
+}
+
+.slide-three{
+  background-image: url("http://va-beachrental.com/wp-content/uploads/2013/09/sandbridge-beach.jpg");
+}
+
+.slide-four{
+  background-image: url("../img/dc.jpg");
+}
+
+.orbit ul{
+  margin:0;
+}
+
+
+.orbit li{
+  list-style: none;
+  padding:0;
+}
+
+
 
 
 /*ABOUT ME///////////////////////////////////////////////////////////////////
