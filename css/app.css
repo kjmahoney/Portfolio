@@ -19,20 +19,14 @@
   text-align: center;
 }
 
-.section-title p{
+.section-title h1{
   text-align: center;
-  display: block;
 }
-
 
 .main{
   padding: 80px 0px;
   color: black;
   background-attachment: fixed;
-}
-
-.center{
-  text-align: center;
 }
 
 /*NAV MOBILE///////////////////////////////////////////////////////////////////
@@ -123,6 +117,10 @@
     z-index: 2;
 }
 
+.center{
+  text-align: center;
+}
+
 /*HERO///////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////*/
 .hero{
@@ -172,13 +170,17 @@
 /*ABOUT ME///////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////*/
 
-.section-title h1{
-  display: block;
-  width: 100px;
-}
-
 .about-me{
   background-image: url("../img/ignasi_pattern_s.png");
+}
+
+.section-header{
+  display: block;
+  margin: -20px 0px 0px 0px;
+}
+
+.intro p{
+  margin: 45px 0px 0px 0px;
 }
 
 .main h2{
@@ -190,11 +192,17 @@
 }
 
 .prof-pic{
-  display: block;
-  background-image: url("../img/ProfPic1.png");
+  display: inline-block;
   border-radius: 50%;
-  width:200px;
-  height: 200px;
+  width:175px;
+  height: 225px;
+}
+
+.bio{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 /*PORTFOLIO///////////////////////////////////////////////////////////////////
